@@ -1,4 +1,4 @@
-# Mergulho Java
+# Mergulho Java 🤿☕
 Aulas da AlgaWorks 
 https://mj.algaworks.com/
 
