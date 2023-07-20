@@ -1,7 +1,7 @@
 ### Autores
 ---
 
-<img style="border-radius: 50%;" src="https://c.disquscdn.com/uploads/users/29126/3816/avatar200.jpg?1688165091" width="100px;" alt=""/><sub><b>Tiago Faria<br>Professor - Algaworks - Este não tem relação com o repositório</b></sub>
+<img style="border-radius: 50%;" src="https://c.disquscdn.com/uploads/users/29126/3816/avatar200.jpg?1688165091" width="100px;" alt=""/><sub><b>Tiago Faria<br>Este não tem relação com o repositório, porém como é o quem está dando as aulas da AlgaWorks, achei interessante creditá-lo</b></sub>
 
 ---
 
