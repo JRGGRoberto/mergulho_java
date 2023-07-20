@@ -1,14 +1,47 @@
 import java.util.Objects;
 
 public class Conta {
-  public int agencia;
-  public int numero;
-  public double saldo;
-  public Pessoa titular;
+  private int agencia;
+  private int numero;
+  private double saldo;
+  private Pessoa titular;
 
   Conta(){
-
+    
   }
+
+  public int getAgencia() {
+    return agencia;
+  }
+
+  public void setAgencia(int agencia) {
+    this.agencia = agencia;
+  }
+
+  public int getNumero() {
+    return numero;
+  }
+
+  public void setNumero(int numero) {
+    this.numero = numero;
+  }
+
+  public double getSaldo() {
+    return saldo;
+  }
+
+  public void setSaldo(double saldo) {
+    this.saldo = saldo;
+  }
+
+  public Pessoa getTitular() {
+    return titular;
+  }
+
+  public void setTitular(Pessoa titular) {
+    this.titular = titular;
+  }
+
   Conta(Pessoa titular, int agencia, int numero){
     Objects.requireNonNull(titular);
 
