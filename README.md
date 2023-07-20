@@ -3,16 +3,18 @@ Aulas da AlgaWorks
 https://mj.algaworks.com/
 
 ## Contribua!
-+ Cada aula é um issue
-+ Cada tópico de aula é uma task
+<a href="https://github.com/JRGGRoberto/mergulho_java/graphs/contributors" alt="Contributors">
+<img src="https://img.shields.io/github/contributors/JRGGRoberto/mergulho_java" /></a>
+        
+Clique no <a href="https://github.com/JRGGRoberto/mergulho_java/issues">Issues</a> e veja o que pode contribuir
+
+[![GitHub issues open](https://img.shields.io/github/issues/JRGGRoberto/mergulho_java.svg?maxAge=2592000)]() 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/JRGGRoberto/mergulho_java.svg?maxAge=2592000)]()
+
++ Cada aula é um issue;
++ Cada tópico de aula é uma task;
 
 Ao concluir a aula, execute o commit da seguinte forma:
 
     git commit -m "aula X concluida: fix #<id_issue>"
 
-## Aula 1
-+ Conhecendo a plataforma Java
-+ Fundamentos da linguagem Java
-+ Métodos, construtores e sobrecarga
-+ Encapsulamento e JavaBeans
-+ Pacotes
