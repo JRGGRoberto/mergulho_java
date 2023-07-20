@@ -7,9 +7,9 @@ https://mj.algaworks.com/
 <img src="https://img.shields.io/github/contributors/JRGGRoberto/mergulho_java" /></a>
         
 Clique no <a href="https://github.com/JRGGRoberto/mergulho_java/issues">Issues</a> e veja o que pode contribuir
-
-[![GitHub issues open](https://img.shields.io/github/issues/JRGGRoberto/mergulho_java.svg?maxAge=2592000)]() 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/JRGGRoberto/mergulho_java.svg?maxAge=2592000)]()
+                       
+[![GitHub issues open](https://img.shields.io/github/issues/JRGGRoberto/mergulho_java.svg)]() 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/JRGGRoberto/mergulho_java.svg)]()
 
 + Cada aula é um issue;
 + Cada tópico de aula é uma task;
