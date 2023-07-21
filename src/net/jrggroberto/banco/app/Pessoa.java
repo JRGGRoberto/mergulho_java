@@ -1,3 +1,4 @@
+package jrggroberto.banco.app;
 public class Pessoa {
     private String nome;
     private int  documento;

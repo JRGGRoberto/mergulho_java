@@ -1,3 +1,4 @@
+package jrggroberto.banco.app;
 public class Principal {
 
   public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Principal {
     suaConta.setTitular(t2);
 
 
-    suaConta.depositar(30_300);
+    suaConta.depositar(38_300);
     suaConta.sacar(300, 10);
 
     System.out.println("Titular: " + minhaConta.getTitular().getNome());

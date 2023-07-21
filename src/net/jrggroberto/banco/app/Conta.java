@@ -1,3 +1,4 @@
+package jrggroberto.banco.app;
 import java.util.Objects;
 
 public class Conta {
@@ -28,10 +29,6 @@ public class Conta {
 
   public double getSaldo() {
     return saldo;
-  }
-
-  public void setSaldo(double saldo) {
-    this.saldo = saldo;
   }
 
   public Pessoa getTitular() {
