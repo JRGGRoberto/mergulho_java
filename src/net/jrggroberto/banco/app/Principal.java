@@ -1,9 +1,9 @@
 package jrggroberto.banco.app;
 
-import jrggroberto.banco.modelo.Conta;
+import jrggroberto.banco.modelo.Pessoa;
+import jrggroberto.banco.modelo.CaixaEletronico;
 import jrggroberto.banco.modelo.ContaEspecial;
 import jrggroberto.banco.modelo.ContaInvestimento;
-import jrggroberto.banco.modelo.Pessoa;
 
 public class Principal {
 
@@ -26,11 +26,11 @@ public class Principal {
     suaConta.depositar(38_300);
     suaConta.sacar(38_500);
 
-    System.out.println("Titular: " + minhaConta.getTitular().getNome());
-    System.out.println("Saldo: " + minhaConta.getSaldo());
+    CaixaEletronico caixaEletronico = new CaixaEletronico();
 
-    System.out.println("Titular: " + suaConta.getTitular().getNome());
-    System.out.println("Saldo: " + suaConta.getSaldo());
+    caixaEletronico.imprimirSaldo(suaConta);
+    System.out.println();
+    caixaEletronico.imprimirSaldo(minhaConta);
   }
 
 }
