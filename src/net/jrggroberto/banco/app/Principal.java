@@ -23,14 +23,17 @@ public class Principal {
     minhaConta.sacar(1_000);
     minhaConta.creditarRendimentos(0.8);
     
-    suaConta.depositar(38_300);
-    suaConta.sacar(38_500);
+    suaConta.depositar(15_000);
+    suaConta.sacar(15_500);
 
     CaixaEletronico caixaEletronico = new CaixaEletronico();
 
-    caixaEletronico.imprimirSaldo(suaConta);
-    System.out.println();
+    minhaConta.debitarTarifaMensal();
+    suaConta.debitarTarifaMensal();
+
     caixaEletronico.imprimirSaldo(minhaConta);
+    System.out.println();
+    caixaEletronico.imprimirSaldo(suaConta);
   }
 
 }
