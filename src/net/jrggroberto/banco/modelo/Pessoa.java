@@ -1,4 +1,4 @@
-package jrggroberto.banco.app;
+package jrggroberto.banco.modelo;
 public class Pessoa {
     private String nome;
     private int  documento;

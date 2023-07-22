@@ -1,4 +1,4 @@
-package jrggroberto.banco.app;
+package jrggroberto.banco.modelo;
 import java.util.Objects;
 
 public class Conta {
@@ -7,7 +7,7 @@ public class Conta {
   private double saldo;
   private Pessoa titular;
 
-  Conta(){
+  public Conta(){
     
   }
 
@@ -39,7 +39,7 @@ public class Conta {
     this.titular = titular;
   }
 
-  Conta(Pessoa titular, int agencia, int numero){
+  public Conta(Pessoa titular, int agencia, int numero){
     Objects.requireNonNull(titular);
 
     this.titular = titular;
@@ -47,14 +47,14 @@ public class Conta {
     this.numero = numero;
 
   }
-  void depositar(double valor){
+  public void depositar(double valor){
     if(valor <= 0){
       throw new IllegalArgumentException("Valor deve ser maior que zeo");
     }
     saldo =+ valor;
   }
 
-  void sacar(double valor){
+  public void sacar(double valor){
     if(saldo - valor < 0){
       throw new IllegalStateException("Saldo insuficiente");
     } else {
@@ -62,7 +62,7 @@ public class Conta {
     }
   }
 
-  void sacar( double valor, double taxaSaque){
+  public void sacar( double valor, double taxaSaque){
     sacar(valor + taxaSaque);
   }
 }

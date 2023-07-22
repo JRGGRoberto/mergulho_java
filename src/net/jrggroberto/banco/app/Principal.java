@@ -1,9 +1,14 @@
 package jrggroberto.banco.app;
+
+import jrggroberto.banco.modelo.Conta;
+import jrggroberto.banco.modelo.Pessoa;
+
 public class Principal {
 
   public static void main(String[] args) {
     Pessoa t = new Pessoa();
     t.setNome("Roberto");
+    t.setDocumento(123);
     Conta minhaConta = new Conta(t, 234, 199);
     minhaConta.depositar(17_800);
     Pessoa t2 = new Pessoa();
