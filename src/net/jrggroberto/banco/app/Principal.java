@@ -1,6 +1,7 @@
 package jrggroberto.banco.app;
 
 import jrggroberto.banco.modelo.Conta;
+import jrggroberto.banco.modelo.ContaEspecial;
 import jrggroberto.banco.modelo.ContaInvestimento;
 import jrggroberto.banco.modelo.Pessoa;
 
@@ -16,14 +17,14 @@ public class Principal {
     titular2.setDocumento(861);
 
     ContaInvestimento minhaConta = new ContaInvestimento(titular, 234, 199);
-    Conta suaConta = new Conta(titular2, 235, 2001);
+    ContaEspecial suaConta = new ContaEspecial(titular2, 235, 2001, 1000);
 
     minhaConta.depositar(15_000);
     minhaConta.sacar(1_000);
     minhaConta.creditarRendimentos(0.8);
     
     suaConta.depositar(38_300);
-    suaConta.sacar(300);
+    suaConta.sacar(38_500);
 
     System.out.println("Titular: " + minhaConta.getTitular().getNome());
     System.out.println("Saldo: " + minhaConta.getSaldo());

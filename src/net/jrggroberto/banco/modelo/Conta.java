@@ -8,7 +8,6 @@ public class Conta {
   private Pessoa titular;
 
   public Conta(){
-    
   }
 
   public int getAgencia() {
@@ -55,11 +54,18 @@ public class Conta {
   }
 
   public void sacar(double valor){
-    if(saldo - valor < 0){
+    if (valor <= 0) {
+      throw new IllegalArgumentException("Valor deve ser maior que 0");
+    }
+    if(getSaldoDisponivel() - valor < 0){
       throw new IllegalStateException("Saldo insuficiente");
     } else {
       saldo -= valor;
     }
+  }
+
+  public double getSaldoDisponivel(){
+    return getSaldo();
   }
 /*
   public void sacar( double valor, double taxaSaque){
