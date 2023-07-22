@@ -1,25 +1,29 @@
 package jrggroberto.banco.app;
 
 import jrggroberto.banco.modelo.Conta;
+import jrggroberto.banco.modelo.ContaInvestimento;
 import jrggroberto.banco.modelo.Pessoa;
 
 public class Principal {
 
   public static void main(String[] args) {
-    Pessoa t = new Pessoa();
-    t.setNome("Roberto");
-    t.setDocumento(123);
-    Conta minhaConta = new Conta(t, 234, 199);
-    minhaConta.depositar(17_800);
-    Pessoa t2 = new Pessoa();
-    t2.setNome("Joelma");
+    Pessoa titular = new Pessoa();
+    titular.setNome("Roberto");
+    titular.setDocumento(123);
 
-    Conta suaConta = new Conta();
-    suaConta.setTitular(t2);
+    Pessoa titular2 = new Pessoa();
+    titular2.setNome("Joelma");
+    titular2.setDocumento(861);
 
+    ContaInvestimento minhaConta = new ContaInvestimento(titular, 234, 199);
+    Conta suaConta = new Conta(titular2, 235, 2001);
 
+    minhaConta.depositar(15_000);
+    minhaConta.sacar(1_000);
+    minhaConta.creditarRendimentos(0.8);
+    
     suaConta.depositar(38_300);
-    suaConta.sacar(300, 10);
+    suaConta.sacar(300);
 
     System.out.println("Titular: " + minhaConta.getTitular().getNome());
     System.out.println("Saldo: " + minhaConta.getSaldo());

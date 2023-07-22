@@ -51,7 +51,7 @@ public class Conta {
     if(valor <= 0){
       throw new IllegalArgumentException("Valor deve ser maior que zeo");
     }
-    saldo =+ valor;
+    saldo += valor;
   }
 
   public void sacar(double valor){
@@ -61,8 +61,9 @@ public class Conta {
       saldo -= valor;
     }
   }
-
+/*
   public void sacar( double valor, double taxaSaque){
     sacar(valor + taxaSaque);
   }
+   */
 }
